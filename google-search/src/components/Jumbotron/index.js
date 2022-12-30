@@ -1,26 +1,34 @@
 import React from "react";
+import Card from 'react-bootstrap/Card';
 
 const styles = {
     jumboStyle: {
-        color: 'white',
-        font: 'Georgia',
-        background: '#D3D3D3',
-        border: '2px solid black',
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+    },
+    bodyStyle: {
+        textAlign: 'center', 
+    },
+    titleStyle: {
+        color: "#6c757d",
+        fontSize: '45px',
     },
     textStyle: {
         color: "black"
+
     }
 };
 
 function Jumbotron() {
     return (
-        <div style={styles.jumboStyle} className='container'>
-        <div style={{textAlign: 'center'}} className="jumbotron jumbotron-fluid">
-        <div className="container-fluid">
-        <h1 className="display-4">Google Book Search</h1>
-        <p style={styles.textStyle} className="lead">Search For and Save Books of Interest</p>
-        </div>
-        </div>
+        <div style={styles.jumboStyle}>
+            <Card style={{width: '95%'}}>
+                <Card.Body style={styles.bodyStyle}> 
+                    <Card.Title style={styles.titleStyle}>Google Book Search</Card.Title>
+                    <Card.Text className="text-muted" style={styles.textStyle}>Search For and Save Books of Interest</Card.Text>
+                </Card.Body>
+            </Card>
         </div>
     )
 }
