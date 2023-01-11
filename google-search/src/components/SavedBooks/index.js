@@ -1,11 +1,10 @@
 import React from "react";
 import Card from 'react-bootstrap/Card';
-import BookDetails from "../BookDetails";
 
-function SearchResults() {
+function SavedResults() {
 
     const styles = {
-        ResultsStyle: {
+        SavedStyle: {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -13,15 +12,15 @@ function SearchResults() {
     };
 
     return (
-        <div style={styles.ResultsStyle}>
-            <Card style={{width: '95%', padding: '25px'}}>
+        <div style={styles.SavedStyle}>
+        <Card style={{width: '95%', padding: '25px'}}>
         <Card.Subtitle>
-        Results
-        <BookDetails />
+        Saved
+        {/* render book details here */}
         </Card.Subtitle>
         </Card>
         </div>
     )
 }
 
-export default SearchResults;
+export default SavedResults;
