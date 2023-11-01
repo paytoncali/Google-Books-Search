@@ -2,7 +2,10 @@ import React from "react";
 import Card from 'react-bootstrap/Card';
 
 function SavedResults() {
-
+    // functionality for view button and del button
+    // view will pop up a module of the book
+    // delete will remove book data from "saved" page
+    
     const styles = {
         SavedStyle: {
             display: "flex",

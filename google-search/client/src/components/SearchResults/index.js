@@ -3,6 +3,9 @@ import Card from 'react-bootstrap/Card';
 import BookDetails from "../BookDetails";
 
 function SearchResults() {
+// functionality for view button and save button
+    // view will pop up a module of the book
+    // save will send book data to "saved" page
 
     const styles = {
         ResultsStyle: {

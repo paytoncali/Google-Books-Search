@@ -3,6 +3,7 @@ import Card from 'react-bootstrap/Card';
 
 function BookDetails() {
 
+    // book details module
     
     return (
         <div>

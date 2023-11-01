@@ -3,9 +3,12 @@ import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
+import API from "../../utils/API";
 
 function SearchBar() {
-
+  // add functionality for computer to "read" input of search bar onclick of search button
+  // sends info to api and returns with a list of results 
+  // "bookdetails" is looped through for all results fitting search 
     const styles = {
         SearchBarStyle: {
             display: "flex",
@@ -13,6 +16,9 @@ function SearchBar() {
             justifyContent: "center",
         },
     };
+
+    
+
 
   return (
     <div style={styles.SearchBarStyle}>
